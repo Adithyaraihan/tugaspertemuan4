@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class menghitungluas {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+    
+        System.out.println("BANGUN DATAR (huruf kecil)");
+        System.out.println("  1.persegi");
+        System.out.println("  2.segitiga");
+        System.out.println("  3.lingkaran");
+        System.out.print("Mencari luas apa:");
+        String luas = input.nextLine();
+      
+      // menghitung luad persegi
+        if (luas.equals("persegi")){
+          System.out.print("SISI: ");
+          double sisi = input.nextDouble();
+          System.out.println("LUASI PERSEGI:" + sisi * sisi);
+        }
+
+      //menghitung luas segitiga
+        if (luas.equals("segitiga")){
+          System.out.print("ALAS: ");
+          double alas = input.nextDouble();
+
+          System.out.print("TINGGI:");
+          double tinggi = input.nextDouble();
+
+          System.out.println("LUAS SEGITIGA:" + 0.5* alas *tinggi);
+        }
+
+      //menghitung luas lingkaran
+         if (luas.equals("lingkaran")){
+          System.out.print("JARI JARI:");
+          double jari = input.nextDouble();
+
+          System.out.println("LUAS LINGKARAN:" + 22/7 * jari *jari);
+         }
+
+
+
+
+      }  
+  }
