@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class bio_grade {
+    public static void main(String[] args) {
+
+        // Scanner
+        Scanner input = new Scanner(System.in);
+
+        // Heading
+        System.out.println("====DATA AKHIR MAHASISWA===");
+
+        // Nama mahasiswa
+        System.out.print("NAMA:");
+        String nama = input.nextLine();
+
+        // NIM mahasiswa
+        System.out.print("NIM:");
+        String nim = input.nextLine();
+
+        // Nilai tugas
+        System.out.print("TUGAS:");
+        double tgs = Double.parseDouble(input.nextLine());
+
+        // Nilai UTS
+        System.out.print("UTS:");
+        double uts = Double.parseDouble(input.nextLine());
+
+        // Nilai UAS
+        System.out.print("UAS:");
+        double uas = Double.parseDouble(input.nextLine());
+
+        // Nilai akhir
+        double nilai_akhir = tgs * 0.3 + uts * 0.3 + uas * 0.4;
+        System.out.println("NILAI AKHIR:" + nilai_akhir);
+
+        if (nilai_akhir >= 80) {
+        System.out.println("GRADE NILAI: A");
+         }
+        else if (nilai_akhir >= 70){
+         System.out.println("GRADE NILAI: B");
+        }
+
+          else if (nilai_akhir >= 60){
+        System.out.println("GRADE NILAI: C");
+       }
+
+       else if (nilai_akhir >= 50){
+      System.out.println("GRADE NILAI: D");
+       }
+       else {
+      System.out.println("GRADE NILAI: E");
+        }
+    }
+}
